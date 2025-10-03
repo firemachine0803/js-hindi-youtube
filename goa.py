@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Telegram Bot Constants
 BOT_TOKEN = "6732341545:AAErWzUWnrB16b9IRpC4FhBo7Aw7VT2h7kY"
-CHAT_ID = "@akashbalance"
+CHAT_ID = "@vngo1minutes"
 TELEGRAM_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
 class LotteryPredictor:
