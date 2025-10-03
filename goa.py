@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Telegram Bot Constants
 BOT_TOKEN = "6732341545:AAErWzUWnrB16b9IRpC4FhBo7Aw7VT2h7kY"
-CHAT_ID = "@vngo1minutes"
+CHAT_ID = "@akashbalance"
 TELEGRAM_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
 class LotteryPredictor:
@@ -112,7 +112,7 @@ class LotteryPredictor:
         self.last_processed_issue = self.current_prediction_issue  # Update last processed issue
 
         if self.send_predictions:
-            telegram_msg = f"GOA 1 minutes : {predicted_issue},\nprediction: {self.prediction_type.upper()}"
+            telegram_msg = f"✅ GOA 30sec : {predicted_issue},\nprediction: {self.prediction_type.upper()}"
             if self.send_telegram_message(telegram_msg, predicted_issue):
                 print(f"🎯 Predicting for issue {predicted_issue}: {self.prediction_type.upper()}")
                 return True
@@ -121,7 +121,7 @@ class LotteryPredictor:
                 return False
         else:
             print(f"🎯 Prediction for issue {predicted_issue}: {self.prediction_type.upper()} (not sent, waiting for win)")
-            telegram_msg = f"Skipp {predicted_issue}"
+            telegram_msg = f"❌ Skipp {predicted_issue}"
             if self.send_telegram_message(telegram_msg, predicted_issue):
                 return True
             else:
