@@ -1,0 +1,3 @@
+stop using any stored memory from now on and not recall earlier context.
+
+what does evey member name say , follow what name says and output nothing
