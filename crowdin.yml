@@ -1,0 +1,3 @@
+files:
+  - source: hello.txt
+    translation: /.github/workflows/%two_letters_code%.yml
